@@ -1,0 +1,105 @@
+/* GLOBAL */
+
+:root {
+    box-sizing: border-box; 
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit; 
+    margin: 0; 
+    padding: 0; 
+
+    background-size: cover, cover; 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+}
+
+body {
+    font-family: 'Kaushan Script', 'Helvetica', sans-serif; 
+}
+
+a {
+    text-decoration: none; 
+}
+
+/* HOMEPAGE */
+
+.container {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    
+    background: linear-gradient(to bottom, #E7EFF5 0, #E7EFF5 33%, #DBE7EA88 100%), URL('./images/SandS.png');
+
+    background-size: cover, cover; 
+    background-position: center, center 33vh; 
+    background-repeat: no-repeat, repeat; 
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+.cta, 
+.intro {
+    margin: 1.2em 36px; 
+    
+    text-align: center; 
+    text-transform: uppercase; 
+    font-size: 12px; 
+}
+
+.intro:nth-of-type(1) {
+    margin-top: 92px; 
+}
+
+.main-title {
+    display: block; 
+    margin: 93px; 
+    
+    font-size: 4rem; 
+    font-family: 'Just Another Hand', sans-serif; 
+    color: #F1B312; 
+    text-align: center; 
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.cta {
+    display: block; 
+
+    text-transform: uppercase; 
+}
+
+.button {
+    padding: 0.6em 1.2em; 
+    
+    font-size: 8px; 
+    font-family: 'Koh Santepheap'; 
+    background-color: #F1B312; 
+    text-transform: uppercase; 
+
+    box-shadow: 0 4px 8px #0008; 
+    
+    border-radius: 50vw; 
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    width: 80vw; 
+    margin: auto 0 1.2em; 
+    padding: 1.2em 0 0; 
+    
+    font-family: 'Kreon', serif; 
+    font-size: 10px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    /* line-height: 2.4;  */
+
+    border-top: 1px solid #000; 
+}
