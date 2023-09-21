@@ -22,27 +22,27 @@ body {
 
 a {
     text-decoration: none; 
+    color: #000; 
 }
 
 /* HOMEPAGE */
 
 .container {
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0; 
+    min-height: 100vh; 
     
     background: linear-gradient(to bottom, #E7EFF5 0, #E7EFF5 33%, #DBE7EA88 100%), URL('./images/SandS.png');
-
     background-size: cover, cover; 
     background-position: center, center 33vh; 
     background-repeat: no-repeat, repeat; 
-
+    
     display: flex; 
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: center; 
+}
+
+.character .container {
+    background: linear-gradient(to bottom, #E7EFF5 0, #E7EFF5 33%, #DBE7EA88 100%), URL('./images/SandS.png');
 }
 
 .cta, 
@@ -75,7 +75,7 @@ a {
     text-transform: uppercase; 
 }
 
-.button {
+[class ^= 'button'] {
     padding: 0.6em 1.2em; 
     
     font-size: 8px; 
@@ -102,4 +102,32 @@ a {
     /* line-height: 2.4;  */
 
     border-top: 1px solid #000; 
+}
+
+/* CHARACTER PAGE */
+
+[class ^= 'character-card' ] {
+    height: 600px; 
+    width: 66%; 
+    margin: 42px 0; 
+
+    background-color: #DCE8EBCC; 
+
+    border-radius: 16.666vw; 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+[class ^= 'character-card__sophie'] {
+    background-color: #F1B312CC; 
+}
+
+[class ^= 'button'] {
+    color: #ED12F1; 
+    background-color: #ED12F144; 
+    
+    border: 5px solid #ED12F1; 
 }
